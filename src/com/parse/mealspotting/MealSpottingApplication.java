@@ -12,23 +12,15 @@ public class MealSpottingApplication extends Application {
 	@Override
 	public void onCreate() {
 		super.onCreate();
-
 		/*
-		 * In this tutorial, we'll subclass ParseObject for convenience to
-		 * create and modify Meal objects
+		 * In this tutorial, we'll subclass ParseObject for convenience to create and modify Meal objects
 		 */
 		ParseObject.registerSubclass(Meal.class);
 
-		/*
-		 * Fill in this section with your Parse credentials
-		 */
-		Parse.initialize(this, "YOUR_APP_ID", "YOUR_CLIENT_KEY");
+		Parse.initialize(this, "6TqeI5Ecr5EDsI90kj3aFMQw2HDW3lTg7l5Jay4Y", "E2B3QaN60JxJZ7MOcokL1IrK55uGforKvLnyq4CV");
 
 		/*
-		 * This app lets an anonymous user create and save photos of meals
-		 * they've eaten. An anonymous user is a user that can be created
-		 * without a username and password but still has all of the same
-		 * capabilities as any other ParseUser.
+
 		 * 
 		 * After logging out, an anonymous user is abandoned, and its data is no
 		 * longer accessible. In your own app, you can convert anonymous users
